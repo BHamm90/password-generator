@@ -17,6 +17,8 @@ Password should auto generate and display in textarea.</p>
 
 <img src="Assets/webPrev.png">
 
+<a href="https://bhamm90.github.io/password-generator/">Password Generator Webpage</a>
+
 <h3>Preview of the Javascript:</h3>
 
 <img src="Assets/Java.png">
