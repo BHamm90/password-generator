@@ -25,6 +25,10 @@ function UserInput(ps) {
 
 }
 
+function eraseText() {
+    document.getElementById("password").value = "";
+}
+
 //Function List for Password Generation
 function generatePassword() {
     // Start of if statements
@@ -55,7 +59,7 @@ function generatePassword() {
     
     // All confirm options are Yes's
     else if (upperChoice && lowerChoice && numberChoice && symbolChoice) {
-        options = character.concat(upperCase, lowerCase, numbers, symbols);
+        options = upperCase.concat(lowerCase, numbers, symbols);
     }
 
     // If only 3 option are selected
@@ -146,6 +150,7 @@ function generatePassword() {
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", function () {
+    onclick = eraseText();
     pw = generatePassword();
     document.getElementById("password").placeholder = pw;
 });
